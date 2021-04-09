@@ -41,7 +41,8 @@ jobs:
         run: ./gradlew lint
       - name: Test with Gradle
         run: ./gradlew testStagingDebugUnitTest
-      - uses: reactivecircus/android-emulator-runner@v2
+      - name: run UI tests
+        uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 30
           target: default
