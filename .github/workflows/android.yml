@@ -44,10 +44,5 @@ jobs:
       - name: run UI tests
         uses: reactivecircus/android-emulator-runner@v2
         with:
-          api-level: 30
-          target: default
-          arch: x86
-          profile: Nexus 6
-          script: ./gradlew connectedCheck --stacktrace
-          - name: Android Test with Gradle
-            run: ./gradlew connectedDebugAndroidTest
+          api-level: 29
+          script: ./gradlew connectedCheck
